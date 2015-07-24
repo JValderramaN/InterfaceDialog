@@ -104,6 +104,11 @@ public class Main extends javax.swing.JFrame {
         myDialog.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    static public void setDataExchange(dataExchange d) {
+        jTFservice.setText(d.getService());
+        jTFlogin.setText(d.getLogin());
+    }
+    
     private void jTFloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFloginActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTFloginActionPerformed
@@ -150,7 +155,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField jTFlogin;
-    private javax.swing.JTextField jTFservice;
+    private static javax.swing.JTextField jTFlogin;
+    private static javax.swing.JTextField jTFservice;
     // End of variables declaration//GEN-END:variables
 }
